@@ -1,0 +1,13 @@
+<div>
+  <input type="input" #queryInput (keyup.enter)="search(queryInput.value)">
+</div>
+
+<div>
+  <h1>Result</h1>
+  <div *ngFor="let result of results" style="display: inline;">
+    <img style="width:100px;" [src]="result.album.images[0].url">
+    <p>name :
+      <a [routerLink]="['/detail' ,result.external_ids.isrc]"> {{result.name}}</a>
+    </p>
+  </div>
+</div>
