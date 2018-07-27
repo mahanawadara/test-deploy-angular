@@ -1,3 +1,5 @@
+import { SpotifyAPIKey } from './sposifyApiKey';
 export const environment = {
-  production: true
+  production: true,
+  SpotifyAPIKey: SpotifyAPIKey
 };
